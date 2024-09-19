@@ -20,7 +20,9 @@ spec:
         workingDir: /app/
         ports:
         - containerPort: 3000
-        resources: {}
+        resources:
+          limits:
+            cpu: 100
         volumeMounts:
         - mountPath: /app/
           name: source
